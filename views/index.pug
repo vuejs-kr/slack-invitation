@@ -8,11 +8,13 @@ html
     link(href="//fonts.googleapis.com/css?family=Lato:300,400,700,900,700italic|Open+Sans:700italic,400,600,300,700,800", rel="stylesheet", type="text/css")
   body
     #wrapper
-      .main
+      .main(style="text-align:center;")
+        img(src="https://vuejs.org/images/logo.png" width="215px" height="215px")
         .header
           h1
             strong #{community}
           h2 #{__('HEADER', community)}
+          h3 #{__('HINT')}
         .content
           .information
             form(method="POST", action="invite")#join-form.form
